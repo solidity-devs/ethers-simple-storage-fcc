@@ -10,9 +10,13 @@
         "solc": "0.8.7-fixed"
     },
     "scripts": {
+        "prettier": "prettier --write SimpleStorage.sol",
+        "lint": "prettier --list-different SimpleStorage.sol",
         "compile": "solcjs --bin --abi --include-path node_modules/ --base-path . -o . SimpleStorage.sol"
     },
     "devDependencies": {
+        "@types/fs-extra": "11.0.1",
+        "prettier-plugin-solidity": "1.1.3",
         "tsx": "3.12.6",
         "typescript": "5.0.4"
     }
